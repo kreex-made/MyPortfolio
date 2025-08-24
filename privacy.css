@@ -1,0 +1,338 @@
+/* --- General Header Styling --- */
+header {
+    background-color: #333;
+    /* Dark background for the header */
+    color: #fff;
+    /* White text color */
+    padding: 15px 0;
+    border-bottom: 3px solid #007bff;
+    /* A subtle blue line at the bottom */
+}
+
+header .container {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space items evenly horizontally */
+    align-items: center;
+    /* Vertically align items */
+    max-width: 1200px;
+    /* Max width for content inside header */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 0 20px;
+    /* Horizontal padding */
+}
+
+/* --- MyStore H1 Styling (already provided, included for context) --- */
+header .container h1 {
+    color: #f8f8f8;
+    /* A very light gray for contrast on dark background */
+    font-size: 2.8em;
+    margin: 0;
+    padding: 0;
+    /* Remove specific padding if container handles it */
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- Navigation (Shop, Categories, etc.) Styling --- */
+header nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Make navigation items display in a row */
+}
+
+header nav ul li {
+    margin-left: 25px;
+    /* Space between navigation items */
+}
+
+header nav ul li a {
+    color: #fff;
+    /* White text for links */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-weight: 500;
+    /* Slightly bolder font */
+    font-size: 1.1em;
+    /* Slightly larger font size for readability */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+    padding: 5px 0;
+    /* Add some padding for better click area */
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+    /* Change color on hover to primary blue */
+}
+
+/* Style for the cart count number */
+#cart-item-count {
+    background-color: #007bff;
+    /* Blue background for the count */
+    color: #fff;
+    /* White text for the count */
+    border-radius: 50%;
+    /* Make it a circle */
+    padding: 2px 7px;
+    /* Adjust padding for a good size */
+    font-size: 0.8em;
+    /* Smaller font size */
+    vertical-align: super;
+    /* Raise it slightly above the link text */
+    margin-left: 5px;
+    /* Space from the "Cart" text */
+}
+
+
+/* --- Responsive Adjustments for Header & Nav --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    header .container h1 {
+        font-size: 2.2em;
+        /* Adjust MyStore size */
+        padding-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        width: 100%;
+        /* Take full width */
+        align-items: center;
+        /* Center nav items */
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+        /* Vertical spacing between stacked nav items */
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+        /* Adjust nav link size */
+    }
+}
+
+/* Container for the main policy text */
+.privacy-content {
+    padding: 20px;
+    max-width: 800px;
+    /* Limit width for readability */
+    margin: 40px auto;
+    /* Center the content with top/bottom margin */
+    background-color: #ffffff;
+    /* White background for the policy box */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    /* Soft shadow for depth */
+    line-height: 1.8;
+    /* Increased line height for readability */
+    color: #333;
+    /* Dark gray text color */
+}
+
+/* Main heading for the policy */
+.privacy-content h1 {
+    color: #2c3e50;
+    /* Dark blue-gray, consistent with header H1 */
+    text-align: center;
+    /* Center the main title */
+    margin-bottom: 30px;
+    /* Space below the title */
+    font-size: 2.5em;
+    /* Large font size */
+    font-weight: 600;
+    /* Slightly bolder */
+}
+
+/* Section headings (e.g., "Information Collection And Use") */
+.privacy-content h2 {
+    color: #007bff;
+    /* Primary blue color for section titles */
+    margin-top: 30px;
+    /* Space above each new section */
+    margin-bottom: 15px;
+    /* Space below the heading */
+    font-size: 1.8em;
+    /* Sub-heading font size */
+    border-bottom: 2px solid #eee;
+    /* Light gray line under heading */
+    padding-bottom: 5px;
+    /* Padding between text and line */
+}
+
+/* Sub-section headings (e.g., "Types of Data Collected") */
+.privacy-content h3 {
+    color: #444;
+    /* Slightly lighter than main text, but darker than general body text */
+    margin-top: 20px;
+    /* Space above sub-section */
+    margin-bottom: 10px;
+    /* Space below sub-section heading */
+    font-size: 1.3em;
+    /* Smaller sub-heading font size */
+}
+
+/* Paragraphs and list items */
+.privacy-content p,
+.privacy-content ul {
+    margin-bottom: 15px;
+    /* Space between paragraphs and lists */
+    font-size: 1em;
+    /* Standard text size */
+}
+
+/* Unordered lists (bullet points) */
+.privacy-content ul {
+    list-style: disc;
+    /* Standard bullet points */
+    margin-left: 25px;
+    /* Indent lists */
+}
+
+.privacy-content ul li {
+    margin-bottom: 8px;
+    /* Space between list items */
+}
+
+/* Links within the policy text */
+.privacy-content a {
+    color: #007bff;
+    /* Primary blue for links */
+    text-decoration: none;
+    /* No underline by default */
+}
+
+.privacy-content a:hover {
+    text-decoration: underline;
+    /* Underline on hover for interactivity */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .privacy-content {
+        margin: 20px 10px;
+        /* Reduce side margins on smaller screens */
+        padding: 15px;
+        /* Reduce padding */
+    }
+
+    .privacy-content h1 {
+        font-size: 2em;
+        /* Adjust font size for smaller screens */
+    }
+
+    .privacy-content h2 {
+        font-size: 1.5em;
+    }
+
+    .privacy-content h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #333;
+    /* Dark background, consistent with header */
+    color: #fff;
+    /* White text */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    /* Space above the footer from main content */
+    border-top: 3px solid #007bff;
+    /* Blue line, consistent with header */
+}
+
+footer p {
+    margin-bottom: 10px;
+    /* Space below copyright text */
+    font-size: 0.9em;
+    color: #bbb;
+    /* Slightly lighter gray for copyright */
+}
+
+footer nav ul {
+    list-style: none;
+    /* REMOVE BULLET POINTS */
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Center the footer links */
+    flex-wrap: wrap;
+    /* Allow links to wrap on small screens */
+}
+
+footer nav ul li {
+    margin: 0 15px;
+    /* Spacing between footer links */
+}
+
+footer nav ul li a {
+    color: #fff;
+    /* White text for footer links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 0.9em;
+    /* Slightly smaller font for footer links */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+footer nav ul li a:hover {
+    color: #007bff;
+    /* Primary blue on hover */
+}
+
+/* --- Responsive Adjustments (Add these to style.css as well) --- */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+        /* Vertical spacing for stacked nav items */
+    }
+
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        /* Stack footer links vertically on small screens */
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+        /* Vertical spacing for stacked footer links */
+    }
+}
